@@ -57,7 +57,7 @@ if strcmpi(vehicle,'tiltwing')
 
     % Estimate drag at cruise using quadratic drag polar
     cruiseOutput.D = 0.5 * rho * V^2 * (cruiseOutput.SRef * (cruiseOutput.Cd0 + ...
-        cruiseOutput.CL^2 / (pi * cruiseOutput.AR * cruiseOutput.e)) + cruiseOutput.SCdFuse);
+        cruiseOutput.CL^2 / (pi * cruiseOutput.AR * cruiseOutput.e)));
     
     % Compute cruise power estimate
     cruiseOutput.PCruise = cruiseOutput.D * V;
